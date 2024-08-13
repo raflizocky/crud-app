@@ -9,6 +9,7 @@ A Laravel-based CRUD application with user role management (Superadmin and Admin
 ## Stack
 
 -   Laravel 11 + Breeze (Blade with Alpine)
+-   Flowbite
 -   PostgreSQL
 
 ## Features
