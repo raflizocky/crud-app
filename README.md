@@ -24,28 +24,52 @@ A Laravel-based CRUD application with user role management (Superadmin and Admin
 
 ## Installation
 
-1. New database = `crud-app`.
+1. Database = `crud-app`
 
-2. Clone:
-
-    ```shell
-    git clone https://github.com/raflizocky/crud-app.git
-
-    ```
-
-3. Commands:
+2. Terminal
     - ```shell
-      code crud-app && composer i && php artisan key:generate && php artisan mi:f --seed && npm i && npm run dev && php artisan ser
+      git clone https://github.com/raflizocky/crud-app.git
+      ```
+    - ```shell
+      code crud-app
       ```
 
+3. `.env`
+   - Terminal (VS Code):
+      ```shell
+      cp .env.example .env
+      ```
+    - Adjust `.env`:
+      ```shell
+      DB_CONNECTION=pgsql
+      DB_HOST=127.0.0.1
+      DB_PORT=your_postgres_port
+      DB_DATABASE=crud-app
+      DB_USERNAME=your_postgres_username
+      DB_PASSWORD=your_postgres_password
+      ```
+      
+4. Terminal (VS Code)
+   - ```shell
+     npm i ; npm run dev
+     ```
+    - ```shell
+      composer i ; php artisan key:generate ; php artisan mi:f --seed
+      ```
+   - ```shell
+     php artisan ser
+     ```
+     
 ## Usage
 
--   See `DatabaseSeeder.php` or `crud-app` database for credentials.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Superadmin
+  ```shell
+   email   : superadmin@example.com
+   password: password 
+  ```
+  
+- Admin
+  ```shell
+   email   : admin@example.com
+   password: password 
+  ```
